@@ -1,0 +1,11 @@
+input {
+  display: flex;
+}
+
+.message-box {
+  width: 60%;
+}
+
+.contact-name {
+  width: 35%;
+}

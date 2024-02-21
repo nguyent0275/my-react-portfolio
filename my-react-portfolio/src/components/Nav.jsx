@@ -8,18 +8,21 @@ export default function Nav() {
           display: "flex",
           fontFamily: "helvetica",
           flexDirection: "row",
-          alignItems: "flex-start",
-          justifyContent: "flex-start",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <div style={linkStyle}>
-          <a href="#">About</a>
+          <a href="#about">About Me</a>
         </div>
         <div style={linkStyle}>
-          <a href="#">Portfolio</a>
+          <a href="#portfolio">Portfolio</a>
         </div>
         <div style={linkStyle}>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div style={linkStyle}>
+          <a href="#resume">Resume</a>
         </div>
       </section>
     </nav>

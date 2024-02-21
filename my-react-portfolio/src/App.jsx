@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import Nav from "./components/Nav";
+import About from "./components/About";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
 
@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div>
       <Header />
-      <Nav />
+      <About />
       <Project projects={projects} />
       <Footer />
     </div>

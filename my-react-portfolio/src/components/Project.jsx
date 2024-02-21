@@ -3,6 +3,7 @@ import "../styles/projects.css";
 export default function Project({ projects }) {
   return (
     <section id="portfolio">
+      <h2>Portfolio</h2>
       <div id="projects-container">
         {projects.map((project) => (
           <div className="project-secondary" key={project.id}>
