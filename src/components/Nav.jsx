@@ -1,3 +1,4 @@
+// exporting the Nav component for App.jsx to use for every page
 export default function Nav() {
   const linkStyle = { border: "1px black", padding: "5px" };
 

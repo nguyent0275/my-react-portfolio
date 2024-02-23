@@ -1,9 +1,7 @@
 import Header from "./components/Header";
-// import Footer from "./pages/Contact";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import { Outlet } from "react-router-dom";
-
-// import projects from "./pages/projects";
 
 export default function App() {
   return (
@@ -11,6 +9,7 @@ export default function App() {
       <Header />
       <Nav />
       <Outlet />
+      <Footer />
     </>
   );
 }
