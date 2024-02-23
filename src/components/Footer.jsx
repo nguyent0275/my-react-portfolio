@@ -1,3 +1,4 @@
+// importing react icons for github, linkedin, and stackoverflow
 import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { FaStackOverflow } from "react-icons/fa";

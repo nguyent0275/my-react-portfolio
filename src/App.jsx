@@ -1,3 +1,4 @@
+// importing components
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";

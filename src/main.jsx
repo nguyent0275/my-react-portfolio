@@ -11,11 +11,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-import Resume from "./pages/Resume"
+import Resume from "./pages/Resume";
 
 // project data for portfolio page
 import projects from "./pages/projects";
 
+// Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
     path: "/",

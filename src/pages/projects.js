@@ -1,3 +1,4 @@
+// importing all the images from the image folder
 import horiseon from "../assets/images/horiseon-banner.png";
 import prework from "../assets/images/prework-guide.png"
 import rps from "../assets/images/rock-paper-scissors.png"
@@ -13,7 +14,7 @@ import sql from "../assets/images/sql-employee-tracker.png"
 import ecommerce from "../assets/images/ecommerce-backend.png"
 import anime from "../assets/images/your-anime-sucks.png"
 
-
+// creating an array of projects, this will be used in the Portfolio.jsx to create html elements for each project
 const projects = [
   {
     id: 1,

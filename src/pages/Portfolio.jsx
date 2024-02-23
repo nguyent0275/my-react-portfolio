@@ -1,5 +1,7 @@
+// importing the css
 import "../styles/projects.css";
 
+// page is loading with the array of projects from the projects.js
 export default function Portfolio({ projects }) {
   return (
     <section id="portfolio">

@@ -1,13 +1,16 @@
-import "../styles/footer.css";
+// importing css, state, and email validation helper
+import "../styles/contact.css";
 import { useState } from "react";
 import { validateEmail } from "../utils/helpers";
 
 export default function Contact() {
+  // setting the states for email, name, message, and error message
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
+  // checks for state changes in email, name, or message inputs
   const handleInputChange = (event) => {
     const [target] = event;
     const inputType = target.name;
@@ -22,36 +25,32 @@ export default function Contact() {
     }
   };
 
+  // handles the submission on the submit button
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    if(!validateEmail(email)) {
-      setErrorMessage('Email is invalid')
+    // checks if there is an input for email, name, or message // also checks if the email is in valid email format
+    if (!validateEmail(email)) {
+      setErrorMessage("Email is invalid");
       return;
     } else if (!name) {
-      setErrorMessage('Please enter a name')
+      setErrorMessage("Please enter a name");
       return;
     } else if (!message) {
-      setErrorMessage('Please enter a message')
+      setErrorMessage("Please enter a message");
       return;
     }
 
-    setName('')
-    setEmail('')
-    setMessage('')
-  }
+    // clears the input fields after a sucessful submit
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
+  // returns the xml
   return (
     <section id="contact">
       <h2>Contact Me</h2>
-      <p>If you would like to get in touch, feel free to reach out:</p>
-      <ul>
-        <li>
-          LinkedIn: <a href="#">LinkedIn Profile</a>
-        </li>
-        <li>
-          Github: <a href="#">Github Profile</a>
-        </li>
-      </ul>
       <div className="contact-form">
         <form className="contact-form" onSubmit={handleFormSubmit}>
           <input
@@ -84,8 +83,8 @@ export default function Contact() {
         </form>
         {errorMessage && (
           <div>
-            <p className="error-text"></p>
-            </div>
+            <p>{errorMessage}</p>
+          </div>
         )}
       </div>
     </section>
