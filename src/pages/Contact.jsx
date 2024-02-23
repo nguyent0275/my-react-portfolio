@@ -2,7 +2,7 @@ import "../styles/footer.css";
 import { useState } from "react";
 import { validateEmail } from "../utils/helpers";
 
-export default function Footer() {
+export default function Contact() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -91,6 +91,3 @@ export default function Footer() {
     </section>
   );
 }
-
-// export default function Footer() {
-// }

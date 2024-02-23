@@ -1,6 +1,6 @@
 import "../styles/projects.css";
 
-export default function Project({ projects }) {
+export default function Portfolio({ projects }) {
   return (
     <section id="portfolio">
       <h2>Portfolio</h2>

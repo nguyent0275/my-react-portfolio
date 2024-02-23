@@ -1,10 +1,20 @@
-import React from 'react'
+// react imports
+import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
+
+// bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
-import About from "./pages/About"
-import Project from "./pages/Project"
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+// pages imports
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume"
+
+// project data for portfolio page
+import projects from "./pages/projects";
 
 const router = createBrowserRouter([
   {
@@ -12,22 +22,23 @@ const router = createBrowserRouter([
     element: <App />,
     // errorElement: <Error />,
     children: [
-    //   {
-    //     index: true,
-    //     element: <Home />,
-    //   },
       {
+        index: true,
         path: "/About",
         element: <About />,
       },
       {
-        path: "/Project",
-        element: <Project />,
+        path: "/Portfolio",
+        element: <Portfolio projects={projects} />,
       },
-    //   {
-    //     path: "/Contact",
-    //     element: <Contact />,
-    //   },
+      {
+        path: "/Contact",
+        element: <Contact />,
+      },
+      {
+        path: "/Resume",
+        element: <Resume />,
+      },
     ],
   },
 ]);
