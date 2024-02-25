@@ -1,11 +1,12 @@
 // importing the css
-import "../styles/projects.css";
+import "../styles/portfolio.css";
 
 // page is loading with the array of projects from the projects.js
 export default function Portfolio({ projects }) {
   return (
     <section id="portfolio">
       <h2>Portfolio</h2>
+      <br></br>
       <div id="projects-container">
         {projects.map((project) => (
           <div className="project-secondary" key={project.id}>
@@ -15,7 +16,7 @@ export default function Portfolio({ projects }) {
             </div>
             <div className="img-container">
               <a href={project.link}>
-                <img src={project.image} />
+                <img src={project.image} alt={project.alt} />
               </a>
             </div>
           </div>

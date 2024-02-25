@@ -1,18 +1,18 @@
 // importing all the images from the image folder
 import horiseon from "../assets/images/horiseon-banner.png";
-import prework from "../assets/images/prework-guide.png"
-import rps from "../assets/images/rock-paper-scissors.png"
-import randomPassword from "../assets/images/random-password-generator.png"
-import quiz from "../assets/images/beginner-coding-quiz.png"
-import scheduler from "../assets/images/work-day-scheduler.png"
-import dinner from "../assets/images/whats-for-dinner.png"
-import weather from "../assets/images/weather-dashboard.png"
-import readme from "../assets/images/pro-readme-generator.png"
-import svglogo from "../assets/images/logo.svg"
-import noteTaker from "../assets/images/expressjs-note-taker.png"
-import sql from "../assets/images/sql-employee-tracker.png"
-import ecommerce from "../assets/images/ecommerce-backend.png"
-import anime from "../assets/images/your-anime-sucks.png"
+import prework from "../assets/images/prework-guide.png";
+import rps from "../assets/images/rock-paper-scissors.png";
+import randomPassword from "../assets/images/random-password-generator.png";
+import quiz from "../assets/images/beginner-coding-quiz.png";
+import scheduler from "../assets/images/work-day-scheduler.png";
+import dinner from "../assets/images/whats-for-dinner.png";
+import weather from "../assets/images/weather-dashboard.png";
+import readme from "../assets/images/pro-readme-generator.png";
+import svglogo from "../assets/images/logo.svg";
+import noteTaker from "../assets/images/expressjs-note-taker.png";
+import sql from "../assets/images/sql-employee-tracker.png";
+import ecommerce from "../assets/images/ecommerce-backend.png";
+import anime from "../assets/images/your-anime-sucks.png";
 
 // creating an array of projects, this will be used in the Portfolio.jsx to create html elements for each project
 const projects = [
@@ -23,6 +23,7 @@ const projects = [
     description:
       "Refactoring of HTMl and CSS code for ideal search engine optimization and readability",
     link: "https://nguyent0275.github.io/horiseon-seo-refactor",
+    alt: "my horiseon webpage",
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ const projects = [
     description:
       "A study guide going over the assigned prework for Upenn LPS Bootcamp for Coding.",
     link: "https://nguyent0275.github.io/prework-study-guide/",
+    alt: "my prework study guide webpage",
   },
   {
     id: 3,
@@ -39,6 +41,7 @@ const projects = [
     description:
       "A game of Rock, Paper, Scissors written in Python for a Udemy course.",
     link: "https://replit.com/@ToanNguyen136/rock-paper-scissors-start",
+    alt: "my rock, paper, scissors game",
   },
   {
     id: 4,
@@ -47,6 +50,7 @@ const projects = [
     description:
       "A password generator that creates strong password based on user input",
     link: "https://nguyent0275.github.io/random-password-generator/",
+    alt: "my password generator",
   },
   {
     id: 5,
@@ -55,6 +59,7 @@ const projects = [
     description:
       "A quiz applications with questions based on Javascript fundamentals.",
     link: "https://nguyent0275.github.io/beginner-coding-quiz/",
+    alt: "my javascript coding quiz",
   },
   {
     id: 6,
@@ -63,6 +68,7 @@ const projects = [
     description:
       "An application for planning and keeping track of task throughout the work day.",
     link: "https://nguyent0275.github.io/work-day-scheduler/",
+    alt: "my work day scheduler app",
   },
   {
     id: 7,
@@ -70,6 +76,7 @@ const projects = [
     image: dinner,
     description: "A food and cocktail recipe searching application.",
     link: "https://nguyent0275.github.io/whats-for-dinner/",
+    alt: "my food/cocktail app",
   },
   {
     id: 8,
@@ -78,6 +85,7 @@ const projects = [
     description:
       "An application that uses Open Weather API to get the weather and 5 day forecast of a user specified location",
     link: "https://nguyent0275.github.io/weather-dashboard-api",
+    alt: "my weather dashboard app",
   },
   {
     id: 9,
@@ -86,6 +94,7 @@ const projects = [
     description:
       "A command line interface application that creates professional README's in markdown.",
     link: "https://github.com/nguyent0275/pro-readme-generator",
+    alt: "my-readme-generator",
   },
   {
     id: 10,
@@ -94,6 +103,7 @@ const projects = [
     description:
       "A command line interface application that creates logos in SVG format.",
     link: "https://github.com/nguyent0275/svg-logo-maker/",
+    alt: "my svg-logo-maker app",
   },
   {
     id: 11,
@@ -102,6 +112,7 @@ const projects = [
     description:
       "A note taking application that can be used to write and save notes. The application uses Express.js as a back end and will save and retrieve note data from a JSON file.",
     link: "https://github.com/nguyent0275/expressjs-note-taker",
+    alt: "my note-taker app",
   },
   {
     id: 12,
@@ -110,6 +121,7 @@ const projects = [
     description:
       "A command-line application to manage a company's employee database. Using Node.js, Inquierer, and MySQL to develop the back end of the application.",
     link: "https://github.com/nguyent0275/sql-employee-tracker/",
+    alt: "my sql-employee-tracker",
   },
   {
     id: 13,
@@ -118,6 +130,7 @@ const projects = [
     description:
       "The backend for an e-commerce site build with a Express.js API configured with Sequelize to interact with a MYSQL Database.",
     link: "https://github.com/nguyent0275/eCommerce-Back-End",
+    alt: "my ecommrce-backend",
   },
   {
     id: 14,
@@ -126,6 +139,7 @@ const projects = [
     description:
       "Your Anime Sucks is a comprehensive anime database platform tailored for enthusiasts seeking an enhanced anime-watching experience.",
     link: "https://github.com/nguyent0275/your-anime-sucks",
+    alt: "my-animelist-database-application"
   },
 ];
 

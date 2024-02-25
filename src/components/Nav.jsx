@@ -1,9 +1,10 @@
-import { Link, useLocation } from "react-router-dom";
+// using navlink instead of link because it knows when it is active without extra imports/settings
+import { NavLink } from "react-router-dom";
+import "../styles/nav.css";
 
 // exporting the Nav component for App.jsx to use for every page
 export default function Nav() {
   const linkStyle = { border: "1px black", padding: "5px" };
-  const currentPage = useLocation().pathname;
 
   return (
     <nav className="main-header-menu">
@@ -17,36 +18,46 @@ export default function Nav() {
         }}
       >
         <div style={linkStyle}>
-          <Link
+          <NavLink
             to="./About"
-            className={
-              currentPage === "/About" ? "nav-link active" : "nav-link"
+            // if the navlink is active, will give it a class name of "active" (which has a css of color:blue)
+            // otherwise it will have no class
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
             }
-          >About</Link>
+          >
+            About
+          </NavLink>
         </div>
         <div style={linkStyle}>
-          <Link
+          <NavLink
             to="./Portfolio"
-            className={
-              currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
             }
-          >Portfolio</Link>
+          >
+            Portfolio
+          </NavLink>
         </div>
         <div style={linkStyle}>
-          <Link
+          <NavLink
             to="./Contact"
-            className={
-              currentPage === "/Contact" ? "nav-link active" : "nav-link"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
             }
-          >Contact</Link>
+          >
+            Contact
+          </NavLink>
         </div>
         <div style={linkStyle}>
-          <Link
+          <NavLink
             to="./Resume"
-            className={
-              currentPage === "/Resume" ? "nav-link active" : "nav-link"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
             }
-          >Resume</Link>
+          >
+            Resume
+          </NavLink>
         </div>
       </section>
     </nav>
