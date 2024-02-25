@@ -1,3 +1,4 @@
+// "/About" page and homepage
 export default function About() {
   const aboutMe = `Hello there! I'm Toan Nguyen, and I'm on a thrilling journey to become a
     proficient full stack developer. I've always been fascinated by the

@@ -1,11 +1,12 @@
 // using navlink instead of link because it knows when it is active without extra imports/settings
 import { NavLink } from "react-router-dom";
-import "../styles/nav.css";
+
 
 // exporting the Nav component for App.jsx to use for every page
 export default function Nav() {
   const linkStyle = { border: "1px black", padding: "5px" };
 
+  // returns xml
   return (
     <nav className="main-header-menu">
       <section

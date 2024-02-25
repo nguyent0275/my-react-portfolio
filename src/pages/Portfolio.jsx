@@ -2,6 +2,7 @@
 import "../styles/portfolio.css";
 
 // page is loading with the array of projects from the projects.js
+// "/Portfolio"
 export default function Portfolio({ projects }) {
   return (
     <section id="portfolio">

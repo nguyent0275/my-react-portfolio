@@ -1,5 +1,6 @@
+// importing picture of self and css styling
 import profilePic from "../assets/images/profile_picture.jpg"
-import "../styles/Header.css"
+
 // exporting the Header component for App.jsx to use for every page
 export default function Header() {
   return (

@@ -1,3 +1,5 @@
+// importing resume from assets
+// "/Resume" page
 import resume from "../assets/Resume.pdf";
 export default function Resume() {
   return (

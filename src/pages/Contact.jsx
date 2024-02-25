@@ -3,6 +3,7 @@ import "../styles/contact.css";
 import { useState } from "react";
 import { validateEmail } from "../utils/helpers";
 
+// "/Contact" page
 export default function Contact() {
   // selecting the input fileds for the name, email, message, and error message
   const nameBox = document.getElementById("name");
